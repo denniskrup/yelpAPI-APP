@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Thasadith);
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+.food-background {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/images/food.jpg');
+}
+
+.layer {
+    background-color: rgba(17, 17, 16, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font-family: 'Thasadith', sans-serif;
+    color: red;
+    font-size: 300px;
+    
+}
+
+body {
+  background-color: #222;
+}
+.logo-container {
+  width: 410px;
+}
+.text-border {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: transparent;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 40px;
+}
+.text2 {
+  font-size: 120px;
+}
+.text3 {
+  font-size: 70px;
+}
