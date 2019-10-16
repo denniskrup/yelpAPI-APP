@@ -78,3 +78,17 @@ body {
   font-size: 70px;
 }
 
+.search-bar-custom {
+  width: 200px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search-bar-custom:focus {
+  width: 60%;
+}
+
+.option-size {
+  width: 200px;
+}
