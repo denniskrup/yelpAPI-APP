@@ -2,6 +2,11 @@
 
 module.exports = function(environment) {
   let ENV = {
+    apollo: {
+      //apiURL: '/api'
+      apiURL:
+        'http://node-express-env.zqxi3wpmdm.us-east-2.elasticbeanstalk.com/yelp'
+    },
     modulePrefix: 'yelp-api-app',
     environment,
     rootURL: '/',
