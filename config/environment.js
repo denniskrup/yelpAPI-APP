@@ -11,6 +11,15 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyCYk9ohI46Wh56PighPI-c0fjg2oWscFOA",
+      authDomain: "wish-dish-favorites.firebaseapp.com",
+      databaseURL: "https://wish-dish-favorites.firebaseio.com",
+      projectId: "wish-dish-favorites",
+      storageBucket: "wish-dish-favorites.appspot.com",
+      messagingSenderId: "594740038507",
+      appId: "1:594740038507:web:e928d2cfb82fdf780b9a2e"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

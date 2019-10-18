@@ -1,8 +1,6 @@
-query search($term: String!)
+query search($term: String!, $location: String, $price: String)
 {
-    search(term: $term,
-            location: "new york",
-            limit: 5) {
+    search(term: $term, location: $location, price: $price limit: 5) {
         total
         business {
             name

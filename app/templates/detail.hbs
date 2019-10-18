@@ -1,9 +1,13 @@
-
+<header>
+    <h2>{{model.business.name}}</h2>
+    {{#if model.favorite}}
+    <button {{action "unsave"}}>Unsave</button>
+    {{else}}
+    <button {{action "save"}}>Save</button>
+    {{/if}}
+</header>
 <ul>
-    <li>{{model.name}}</li>
-    <li>{{model.rating}}</li>
-    <li>{{model.phone}}</li>
+    <li>Url: {{model.business.url}}</li>
 </ul>
-
 
 {{outlet}}

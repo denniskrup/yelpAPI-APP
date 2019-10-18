@@ -9,11 +9,19 @@ export default Route.extend({
   queryParams: {
     term: {
       refreshModel: true
+    },
+    price: {
+      refreshModel: true
+    },
+    location: {
+      refreshModel: true
     }
   },
   model(params) {
     if (params.term) {
-      const inputs = { term: params.term };
+      var location = params.location || "New York";
+      var price = params.price || "1";
+      const inputs = { term: params.term, location: location, price: price };
       return this.apollo.watchQuery(
         { query: search, variables: inputs },
         'search'
