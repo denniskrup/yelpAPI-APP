@@ -1,10 +1,10 @@
 
 
-<div class="justify-content-center">
+
   <Input class="search-bar-custom mt-5 ml-5 text-center" @value={{term}}  @placeholder="Enter business name here"/>
   <Input class="search-bar-custom mt-5 second-search-margin text-center" @value={{location}}  @placeholder="Enter desired location here"/>
   <Input class="search-bar-custom mt-5 third-search-margin text-center" @value={{price}}  @placeholder="Enter desired price here"/>
-</div>
+
 <div class="mt-5">
 {{#each model.business as |business|}}
 <li class="list-group-item w-50 mx-auto"><LinkTo @route='detail' @model={{business.id}}>{{business.name}}</LinkTo></li>
