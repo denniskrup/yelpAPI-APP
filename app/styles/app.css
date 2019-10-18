@@ -78,17 +78,27 @@ body {
   font-size: 70px;
 }
 
+
 .search-bar-custom {
-  width: 200px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  border: 2px solid white;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 18px;
+  padding: 5px;
+  height: 35px;
+  width: 350px;
+  background: transparent;
+  color: white;
 }
 
-/* When the input field gets focus, change its width to 100% */
-.search-bar-custom:focus {
-  width: 60%;
+.search-bar-custom::placeholder {
+  color: white;
 }
 
-.option-size {
-  width: 200px;
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+option{
+  background: transparent;
+  color: white;
 }

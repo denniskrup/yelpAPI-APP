@@ -10,6 +10,9 @@ export default Controller.extend({
       throttle(() => {
         this.set('term');
       }, 1000);
+    },
+    searchTerm() {
+      
     }
   }
 });

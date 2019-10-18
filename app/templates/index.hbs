@@ -7,19 +7,17 @@
 </div>
 
 
-<Input list="browsers" class="search-bar-custom" @value={{term}} @placeholder="Enter search here" />
-<datalist class="option-size" id="browsers">
+<Input list="browsers" @enter={{action "searchTerm" business.id}} class="search-bar-custom mt-5 ml-5 text-center" @value={{term}}  @placeholder="Enter business name here"/>
+<datalist id="browsers" >
   {{#each model.business as |business|}}
-  {{!-- <li><LinkTo @route='detail' @model={{business.id}}>{{business.name}}</LinkTo></li> --}}
-  <option value={{business.name}}></option>
+  <option>{{business.name}}</option>
   {{/each}}
 </datalist>
 
-{{model.id}}
 
 
+{{model.id}}   
 {{model.alias}}
 {{model.url}}
-
 
 {{outlet}}
