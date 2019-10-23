@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Thasadith);
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+/* @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister); */
+@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
 
 .food-background {
     min-height: 100%;
@@ -54,12 +56,14 @@ body {
   font-size: 40px;
   position: relative;
   margin:0;
+  
+  
 }
 .script span {
   background-color: transparent;
   padding: 0 0.3em;
 }
-.script:before {
+.script:after {
   content:"";
   display: block;
   position: absolute;
@@ -92,6 +96,7 @@ body {
 
 .search-bar-custom::placeholder {
   color: white;
+  text-shadow: 0.3px 0.3px white;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -105,4 +110,55 @@ option{
 
 li {
   list-style: none
+}
+
+/* nav creation */
+.nav-links {
+ float: right;
+ list-style: none;
+ margin-right: 1em; 
+ /* font-family: 'Love Ya Like A Sister', cursive; */
+ font-family: 'Bungee Shade', cursive;
+ font-size: 25px;
+ font-weight: bold;
+}
+
+.link-style {
+  color: black;
+  text-decoration: none;
+}
+
+.left-animation:hover {
+  -webkit-transition:All .5s ease;
+ -moz-transition:All .5s ease;
+ -o-transition:All .5s ease;
+ 
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
+}
+
+.right-animation:hover {
+  -webkit-transition:All .5s ease;
+  -moz-transition:All .5s ease;
+  -o-transition:All .5s ease;
+  
+  -webkit-transform: rotate(10deg) scale(1.2);
+ -moz-transform: rotate(10deg) scale(1.2);
+ -o-transform: rotate(10deg) scale(1.2);
+}
+
+.logged-in {
+  float:left;
+  margin-left: 5px;
+}
+
+.nav-design {
+  margin-bottom: 70px;
+  background: red;  
+  backdrop-filter: blur(5px);
+}
+
+.google-info {
+  margin-left: -30px;
 }

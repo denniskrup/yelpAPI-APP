@@ -1,16 +1,18 @@
 <div class="food-background">
     <div class="layer text-center">
-        <nav>
+        <nav class="nav-design">
             {{#if session.isAuthenticated}}
-            Logged in as {{ session.data.authenticated.user.displayName }}
-            <button {{action "logout"}}>Sign out</button>
             <ul>
-                <li>
-                    <LinkTo @route="index">Search</LinkTo>
-                </li>
-                <li>
-                    <LinkTo @route="favorites">Favorites</LinkTo>
-                </li>
+            <span class="logged-in">
+            <span class="google-info">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
+            <button {{action "logout"}}>Sign out</button>
+            </span>
+            <li class="nav-links right-animation ">
+                <LinkTo class="link-style" @route="index">Search</LinkTo>
+            </li>
+            <li class="nav-links left-animation">
+                <LinkTo class="link-style" @route="favorites">Favorites</LinkTo>
+            </li>
             </ul>
             {{else}}
             <button {{action "login"}}>Sign in with Google</button>
