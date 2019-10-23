@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Thasadith);
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
-/* @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister); */
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
 
 .food-background {
@@ -56,24 +56,14 @@ body {
   font-size: 40px;
   position: relative;
   margin:0;
-  
-  
 }
 .script span {
   background-color: transparent;
   padding: 0 0.3em;
 }
-.script:after {
-  content:"";
-  display: block;
-  position: absolute;
-  z-index:-1;
-  top: 50%;
-  width: 100%;
-  border-bottom: 3px solid #fff;
-}
 .text1 {
   font-size: 40px;
+  padding-top: 7px;
 }
 .text2 {
   font-size: 125px;
@@ -81,7 +71,12 @@ body {
 .text3 {
   font-size: 70px;
 }
-
+.top-text {
+  border-bottom: 3px solid #fff;
+}
+.bottom-text {
+  border-top: 3px solid #fff;
+}
 
 .search-bar-custom {
   border: 2px solid white;
@@ -97,6 +92,7 @@ body {
 .search-bar-custom::placeholder {
   color: white;
   text-shadow: 0.3px 0.3px white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -118,10 +114,8 @@ li {
 .nav-links {
  list-style: none;
  margin-right: 1em; 
- /* font-family: 'Love Ya Like A Sister', cursive; */
  font-family: 'Bungee Shade', cursive;
  font-size: 25px;
- font-weight: bold;
 }
 
 .nav-link-right {
@@ -134,7 +128,7 @@ li {
 }
 
 .link-style {
-  color: black;
+  color: rgb(255, 255, 255,0.8);
   text-decoration: none;
 }
 
@@ -160,7 +154,7 @@ li {
 
 .logged-in {
   left: 0;
-  margin-top: 200px;
+  margin-top: 190px;
   position: fixed;
 }
 
@@ -178,6 +172,64 @@ img {
  width: 50px;
 }
 
-.text-link {
+
+
+.google-button{
+  background:rgb(255, 255, 255,0.4);
+  border-radius: 3px;
   color:black;
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.google-button:hover{
+  background:transparent;
+  color: white;
+}
+.google-button:before,.google-button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:4px;
+  width:0;
+  background: linear-gradient(to right, #DB4437, #F4B400, #0F9D58, #4285F4);
+  transition:400ms ease all;
+}
+.signout:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.google-button:hover:before,.google-button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.logged-in-text {
+  font-family: 'Quicksand', sans-serif;
+  color:white;
+}
+
+.text-link{
+  font-family: 'Quicksand', sans-serif;
+}
+.text-link:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.results{
+  color: black;
+  background-color:rgb(255, 255, 255,0.8);
+}
+
+.results:hover {
+  transform: scale(1.1);
+  color: black;
+  background-color: rgb(67, 67, 218,0.6);
 }

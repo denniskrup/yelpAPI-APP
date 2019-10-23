@@ -2,7 +2,7 @@
     <div class="layer text-center">
         <nav class="nav-design">
             {{#if session.isAuthenticated}}
-            <ul>
+            <ul class>
             <li class="nav-links nav-link-left left-animation ">
                 <LinkTo class="link-style" @route="index">Search</LinkTo>
             </li>
@@ -11,17 +11,19 @@
             </li>
             </ul>
             {{else}}
-            <button {{action "login"}}>Sign in with Google</button>
+            <button class="google-button mt-3" {{action "login"}}>Sign in with Google</button>
+
             {{/if}}
         </nav>
         {{logo}}
         {{#if session.isAuthenticated}}
         <span class="logged-in">
             <img class="google" alt="google-logo" class="google" src="/assets/images/google.png">
-            <span class="">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
+            <span class="logged-in-text">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
         </span>
-        <button class="mr-2 log-out" {{action "logout"}}>Sign out of google</button>
+        <button class="mr-2 google-button log-out" {{action "logout"}}>Sign out of google</button>
         {{outlet}}
         {{/if}}
     </div>
 </div>
+

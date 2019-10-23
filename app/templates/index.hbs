@@ -6,7 +6,7 @@
 
 <div class="mt-5 mb-5">
 {{#each model.business as |business|}}
-<LinkTo @route='detail' @model={{business.id}}><li class="list-group-item w-50 mx-auto text-link">{{business.name}}</li></LinkTo>
+<LinkTo @route='detail' class="text-link" @model={{business.id}}><li class="results list-group-item list-group-item-action w-50 mx-auto">{{business.name}}</li></LinkTo>
 {{/each}}
 </div>
 
