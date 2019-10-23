@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
-
+@import url(https://fonts.googleapis.com/css?family=Pontano);
 .food-background {
     min-height: 100%;
     min-width: 1024px;
@@ -238,7 +238,6 @@ img {
   background-color: rgb(255, 255, 255, 0.8);
   margin-top: 30px;
   border-radius: 10px;
-  height: 475px;
 }
 
 .detail-photo {
@@ -248,5 +247,9 @@ img {
 
 .text-align-left {
   text-align: left;
-  margin-left: 185px;
+
+}
+
+.business-name {
+  font-family: 'Pontano Sans', sans-serif;
 }
