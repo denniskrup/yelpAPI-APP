@@ -4,10 +4,11 @@
   <Input class="search-bar-custom mt-5 second-search-margin text-center" @value={{location}}  @placeholder="Enter desired location here"/>
   <Input class="search-bar-custom mt-5 third-search-margin text-center" @value={{price}}  @placeholder="Enter desired price here"/>
 
-<div class="mt-5">
+<div class="mt-5 mb-5">
 {{#each model.business as |business|}}
-<li class="list-group-item w-50 mx-auto"><LinkTo @route='detail' @model={{business.id}}>{{business.name}}</LinkTo></li>
+<LinkTo @route='detail' @model={{business.id}}><li class="list-group-item w-50 mx-auto text-link">{{business.name}}</li></LinkTo>
 {{/each}}
 </div>
+
 
 {{outlet}}

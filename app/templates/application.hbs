@@ -3,14 +3,10 @@
         <nav class="nav-design">
             {{#if session.isAuthenticated}}
             <ul>
-            <span class="logged-in">
-            <span class="google-info">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
-            <button {{action "logout"}}>Sign out</button>
-            </span>
-            <li class="nav-links right-animation ">
+            <li class="nav-links nav-link-left left-animation ">
                 <LinkTo class="link-style" @route="index">Search</LinkTo>
             </li>
-            <li class="nav-links left-animation">
+            <li class="nav-links nav-link-right right-animation">
                 <LinkTo class="link-style" @route="favorites">Favorites</LinkTo>
             </li>
             </ul>
@@ -20,6 +16,11 @@
         </nav>
         {{logo}}
         {{#if session.isAuthenticated}}
+        <span class="logged-in">
+            <img class="google" alt="google-logo" class="google" src="/assets/images/google.png">
+            <span class="">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
+        </span>
+        <button class="mr-2 log-out" {{action "logout"}}>Sign out of google</button>
         {{outlet}}
         {{/if}}
     </div>

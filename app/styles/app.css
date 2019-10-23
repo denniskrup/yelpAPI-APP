@@ -102,7 +102,9 @@ body {
 input::-webkit-calendar-picker-indicator {
   display: none;
 }
-
+.nav-design {
+  margin-bottom: 90px;
+}
 option{
   background: transparent;
   color: white;
@@ -114,13 +116,21 @@ li {
 
 /* nav creation */
 .nav-links {
- float: right;
  list-style: none;
  margin-right: 1em; 
  /* font-family: 'Love Ya Like A Sister', cursive; */
  font-family: 'Bungee Shade', cursive;
  font-size: 25px;
  font-weight: bold;
+}
+
+.nav-link-right {
+  float: right;
+}
+
+.nav-link-left {
+  float: left;
+  margin-left: -20px;
 }
 
 .link-style {
@@ -149,16 +159,25 @@ li {
 }
 
 .logged-in {
-  float:left;
-  margin-left: 5px;
+  left: 0;
+  margin-top: 200px;
+  position: fixed;
 }
 
-.nav-design {
-  margin-bottom: 70px;
-  background: red;  
-  backdrop-filter: blur(5px);
+.log-out {
+  right: 0;
+  margin-top: 200px;
+  position: fixed;
+}
+img {
+  background: transparent;
 }
 
-.google-info {
-  margin-left: -30px;
+.google{
+ height: 50px;
+ width: 50px;
+}
+
+.text-link {
+  color:black;
 }
