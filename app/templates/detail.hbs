@@ -1,14 +1,19 @@
-<header>
+<div class="mx-auto w-50 details">
     <h2>{{model.business.name}}</h2>
-    {{#if model.favorite}}
-    <button {{action "unsave"}}>Unsave</button>
-    {{else}}
-    <button {{action "save"}}>Save</button>
-    {{/if}}
-</header>
-<ul>
-    <li>Url: {{model.business.url}}</li>
-    <li class="alert-primary">Url: {{model.business.location.formatted_address}}</li>
-</ul>
 
+   
+     <img class="detail-photo mb-5" src={{model.business.photos}} alt="pics">
+    <p class="text-align-left">Address: {{model.business.location.formatted_address}}</p>
+    <p class="text-align-left">Phone Number: {{model.business.phone}}</p>
+    <p class="text-align-left">Rating: {{model.business.rating}}</p>
+   
+    {{#if model.favorite}}
+    <button class="float-right mr-2" {{action "unsave"}}>Unsave</button>
+    {{else}}
+    <button class="float-right mr-2" {{action "save"}}>Save</button>
+    {{/if}}
+     <a class="float-left ml-2" href={{model.business.url}}><button>Go to Website</button></a>
+
+
+</div>
 {{outlet}}
