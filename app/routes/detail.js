@@ -9,6 +9,7 @@ export default Route.extend({
       //define the model to make calls to the API
       model(params) {
           const variables = { id: params.id };
+          
           return RSVP.hash({
             business: this.apollo.watchQuery({ query, variables }, 'business'),
             favorite: this.store.query('favorite', { filter:{
