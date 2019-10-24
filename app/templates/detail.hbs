@@ -1,22 +1,23 @@
 <div class="mx-auto w-50 details">
     <h2 class="business-name mb-3">{{model.business.name}}</h2>
+    <div class="card-background pt-5">
     <div class="card mx-auto" style="width: 22rem;">
         <img src={{model.business.photos}} class="card-img-top" alt="business-photo">
         <div class="card-body">
             <p class="text-align-left">Address: {{model.business.location.formatted_address}}</p>
             <p class="text-align-left">Phone Number: {{model.business.phone}}</p>
             <p class="text-align-left">Rating: {{model.business.rating}}</p>
-            <a class="" href={{model.business.url}}><button>Go to Website</button></a>
         </div>
     </div>
 
-       
+
+    <a class="" href={{model.business.url}}><button class="business-action-button">Go to Website</button></a>
     {{#if model.favorite}}
-    <button class="mx-auto mb-5 mt-5" {{action "unsave"}}>Unsave</button>
+    <button class="mx-auto mb-5 mt-5 business-action-button" {{action "unsave"}}>Unsave</button>
     {{else}}
-    <button class="mx-auto mb-5 mt-5" {{action "save"}}>Save</button>
+    <button class="mx-auto mb-5 mt-5  business-action-button" {{action "save"}}>Save</button>
     {{/if}}
 
-
+    </div>
 </div>
 {{outlet}}

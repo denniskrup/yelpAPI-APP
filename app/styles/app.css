@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
-@import url(https://fonts.googleapis.com/css?family=Pontano);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 .food-background {
     min-height: 100%;
     min-width: 1024px;
@@ -251,5 +251,20 @@ img {
 }
 
 .business-name {
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+.card-background {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.business-action-button {
+  background:rgb(255, 255, 255,0.8);
+  border-radius: 3px;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.2em;
+  padding:0 2em;
 }
