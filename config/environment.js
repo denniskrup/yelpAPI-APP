@@ -11,15 +11,6 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
-    firebase: {
-      apiKey: "AIzaSyCYk9ohI46Wh56PighPI-c0fjg2oWscFOA",
-      authDomain: "wish-dish-favorites.firebaseapp.com",
-      databaseURL: "https://wish-dish-favorites.firebaseio.com",
-      projectId: "wish-dish-favorites",
-      storageBucket: "wish-dish-favorites.appspot.com",
-      messagingSenderId: "594740038507",
-      appId: "1:594740038507:web:e928d2cfb82fdf780b9a2e"
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -60,16 +51,14 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
-  ENV['ember-google-maps'] = {
-    key: "AIzaSyD4UwM2T1JiPpo9IJtfVAeAaOohW1OZD6Q", // Using .env files in this example
-    language: 'en',
-    region: 'GB',
-    protocol: 'https',
-    version: '3.35',
-    libraries: ['geometry', 'places'], // Optional libraries
-    // client: undefined,
-    // channel: undefined,
-    // baseUrl: '//maps.googleapis.com/maps/api/js'
+  try {
+    const firebase = require('./firebase_config');
+    const maps = require('./googlemaps_config');
+    ENV.firebase = firebase.config.firebase;
+    ENV['ember-google-maps'] = maps.config.maps;
+  } catch (err) {
+    console.log('config/firebase_config.js not found');
+    console.log('config/maps_config.js not found');
   }
   return ENV;
 };
