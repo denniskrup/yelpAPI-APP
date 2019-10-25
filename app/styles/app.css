@@ -226,6 +226,7 @@ img {
 .results{
   color: black;
   background-color:rgb(255, 255, 255,0.8);
+  text-align: left;
 }
 
 .results:hover {
@@ -251,9 +252,9 @@ img {
 }
 
 .business-name {
-  font-family: 'Oswald', sans-serif;
+  
   padding-top: 10px;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .card-background {
@@ -272,4 +273,25 @@ img {
   color:black;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
+}
+
+
+.ember-google-map {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.position-map {
+  margin-top: -700px;
+}
+
+.alignment-results {
+  margin-left: -50px;
+}
+
+.favorites {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 50px;
 }

@@ -60,6 +60,16 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
-
+  ENV['ember-google-maps'] = {
+    key: "AIzaSyD4UwM2T1JiPpo9IJtfVAeAaOohW1OZD6Q", // Using .env files in this example
+    language: 'en',
+    region: 'GB',
+    protocol: 'https',
+    version: '3.35',
+    libraries: ['geometry', 'places'], // Optional libraries
+    // client: undefined,
+    // channel: undefined,
+    // baseUrl: '//maps.googleapis.com/maps/api/js'
+  }
   return ENV;
 };
