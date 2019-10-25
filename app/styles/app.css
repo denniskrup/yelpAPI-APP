@@ -154,13 +154,13 @@ li {
 
 .logged-in {
   left: 0;
-  margin-top: 190px;
+  margin-top: 160px;
   position: fixed;
 }
 
 .log-out {
   right: 0;
-  margin-top: 200px;
+  margin-top: 160px;
   position: fixed;
 }
 img {

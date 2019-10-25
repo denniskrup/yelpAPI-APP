@@ -14,12 +14,12 @@ Describe the time you spent on the project.
 ## User stories
 
 ### Required
- * [x] Search capability with at least three facets (e.g. name, category, location, price level, etc).
- * [x] Search should show some form of “auto-complete” as the user is typing.
- * [x]Display detailed business information, such as: Phone, Review Count and details, Hours
- * [x]Add login ability via Firebase
- * [x]Add “Favorites” page, listing out all Favorites
- * [x]Provide user with ability to Save/Unsave to their Favorites
+ [x] Search capability with at least three facets (e.g. name, category, location, price level, etc).
+ [x] Search should show some form of “auto-complete” as the user is typing.
+ [x] Display detailed business information, such as: Phone, Review Count and details, Hours
+ [x] Add login ability via Firebase
+ [x] Add “Favorites” page, listing out all Favorites
+ [x] Provide user with ability to Save/Unsave to their Favorites
 
 ### Optional
 
@@ -27,7 +27,7 @@ Describe the time you spent on the project.
 
 ## GIF Walkthrough
 
-![Walkthrough GIF](https://media.giphy.com/media/lowDB5iWzqXMcHvEqO/giphy.gif)
+![Walkthrough GIF](https://media.giphy.com/media/PiuVKPUcBD1Q2iEdK9/giphy.gif)
 
 
 ## Notes & shoutouts
