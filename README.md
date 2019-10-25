@@ -40,7 +40,8 @@ This was an incredibly fun and innovative project done. We utilized a different 
 
 I have my API keys hidden, if you wish to pull and run this project you must create 2 files in the config folder, called firebase_config.js and googlemaps_config.js and add following code
 
-```  exports.config = {
+``` 
+ exports.config = {
         firebase: {
             apiKey: "api-key",
             authDomain: "wish-dish-favorites.firebaseapp.com",
@@ -53,7 +54,8 @@ I have my API keys hidden, if you wish to pull and run this project you must cre
 }
  ```
 
-``` exports.config = {
+``` 
+exports.config = {
     maps: {
         key: "api-key", // Using .env files in this example
         language: 'en',
@@ -65,7 +67,8 @@ I have my API keys hidden, if you wish to pull and run this project you must cre
         // channel: undefined,
         // baseUrl: '//maps.googleapis.com/maps/api/js'
       }
-} ```
+}
+ ```
 # yelpAPI-APP
 
 This README outlines the details of collaborating on this Ember application.
