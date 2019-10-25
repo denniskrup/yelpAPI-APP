@@ -1,7 +1,7 @@
 <div>
     <div class="w-50 details ml-4">
         <h2 class="business-name mb-3">{{model.business.name}}</h2>
-        <div class="card-background pt-5">
+        <div class="card-background pt-5 pb-5">
         <div class="card mx-auto" style="width: 18rem;">
             <img src={{model.business.photos}} class="card-img-top" alt="business-photo">
             <div class="card-body card-text-style">
@@ -16,8 +16,7 @@
         <button class="mx-auto mb-5 mt-5 business-action-button" {{action "unsave"}}>Unsave as Favorite</button>
         {{else}}
         <button class="mx-auto mb-5 mt-5  business-action-button" {{action "save"}}>Save as Favorite ⭐</button>
-        {{/if}}
-            
+        {{/if}}     
     </div>
     <div class="position-map mr-4 float-right">
         {{#g-map lat=model.business.coordinates.latitude lng=model.business.coordinates.longitude zoom=20 as |g|}}
