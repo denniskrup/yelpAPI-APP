@@ -1,10 +1,11 @@
+<div class="mt-5">
+    <h1>Favorites</h1>
+    <ol>
+    {{#each model as |favorite|}}
+    <LinkTo @route="detail" @model={{favorite.yelpid}}><li class="results list-group-item list-group-item-action w-75 mx-auto">{{favorite.name}}</li></LinkTo>
+    {{else}}
 
-<h2> Favorites</h2>
-<ol>
-{{#each model as |favorite|}}
-<li><LinkTo @route="detail" @model={{favorite.yelpid}}>{{favorite.name}}</LinkTo></li>
-{{else}}
-
-{{/each}}
-</ol>
+    {{/each}}
+    </ol>
+</div>
 {{outlet}}
