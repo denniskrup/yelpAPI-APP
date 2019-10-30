@@ -7,11 +7,11 @@
                 <LinkTo class="link-style" @route="index">Search</LinkTo>
             </li>
             <li class="nav-links nav-link-right right-animation">
-                <LinkTo class="link-style" @route="favorites">Favorites</LinkTo>
+                <LinkTo class="link-style favorites" @route="favorites">Favorites</LinkTo>
             </li>
             </ul>
             {{else}}
-            <button class="google-button mt-3" {{action "login"}}>Sign in with Google</button>
+            <button class="sign-in google-button mt-3" {{action "login"}}>Sign in with Google</button>
 
             {{/if}}
         </nav>
@@ -21,7 +21,7 @@
             <img class="google" alt="google-logo" class="google" src="/assets/images/google.png">
             <span class="logged-in-text">Logged in as {{ session.data.authenticated.user.displayName }} </span> 
         </span>
-        <button class="mr-2 google-button log-out" {{action "logout"}}>Sign out of google</button>
+        <button class="sign-out mr-2 google-button log-out" {{action "logout"}}>Sign out of google</button>
         {{outlet}}
         {{/if}}
     </div>

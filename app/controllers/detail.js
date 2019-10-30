@@ -8,7 +8,6 @@ export default Controller.extend({
                 yelpid: this.get('model.business.id')
             });
             newFavorite.save().then((favorite)=> {
-                debugger;
                 this.set('model.favorite', favorite);
             });
         },
