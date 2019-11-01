@@ -11,6 +11,18 @@ module('Acceptance | Page Existence', function(hooks) {
   hooks.after(function() {
     sandbox.restore();
   });
+  test('users can see who they are logged in as and have option to log out', async function(assert) {
+    await authenticateSession({
+      userId: 1,
+      displayName: 'Buddy Boy'
+    });
+    await visit('/');
+
+    assert.equal(currentURL(), '/');
+    assert.dom('.logged-in-text').exists();
+    assert.dom('.sign-out').exists();
+  
+  });
 
   test('users can input data to inputs', async function(assert) {
     await authenticateSession({
@@ -20,8 +32,9 @@ module('Acceptance | Page Existence', function(hooks) {
     await visit('/');
 
     assert.equal(currentURL(), '/');
-    fillIn('input', 'Data');
-
+    await fillIn('input', 'Data');
+    assert.dom('.results').exists();
+  
   });
   test('users can visit favorites page', async function(assert) {
     await authenticateSession({
