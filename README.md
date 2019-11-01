@@ -7,8 +7,8 @@ where the user signs in to their google account and can search for business usin
 
 ## Time spent
 Describe the time you spent on the project.
- * Tutorials, research: 5 hours
- * Coding required stories: 8 hours
+ * Tutorials, research: 2 hours
+ * Coding required stories: 6 hours
  * Optional and extras: 1 hour
 
 ## User stories
