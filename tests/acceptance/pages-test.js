@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL, fillIn } from '@ember/test-helpers';
+import { visit, currentURL, fillIn, click } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import { authenticateSession } from 'ember-simple-auth/test-support';
 import sinon from 'sinon';
@@ -31,10 +31,10 @@ module('Acceptance | Page Existence', function(hooks) {
     });
     await visit('/');
 
-    assert.equal(currentURL(), '/');
-    await fillIn('input', 'Data');
-    assert.dom('.results').exists();
-  
+    assert.equal(currentURL(), '/'); 
+    await fillIn('input', 'Data'); //input to the search parameters
+    assert.dom('.results').exists(); //check to see if results pop up
+    assert.equal(currentURL(), '/?term=Data'); //check to see that term is being changed
   });
   test('users can visit favorites page', async function(assert) {
     await authenticateSession({
